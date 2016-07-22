@@ -1,0 +1,506 @@
+<html>
+<head>
+  <title></title>
+
+<style>
+    a {
+      text-decoration: red;
+    }
+
+body {margin:0;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+   
+    margin-left: 5px;
+} 
+h3 {
+    text-decoration: underline;
+}
+p.solid {border-style: solid;}
+
+body {
+font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+
+  
+    background-image: url(https://images6.alphacoders.com/366/366341.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 200px;
+    background-attachment: fixed; 
+    color: #DED29E;
+}
+
+body {margin:0;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+.dairyItem
+{
+    width:172px;
+    height:142px;
+}
+.applItem
+{
+    width:172px;
+    height:142px;
+   
+}
+.meatItem
+{
+    width:172px;
+    height:142px;
+}
+.veggieItem
+{
+    width:172px;
+    height:142px;
+}
+.fruitItem
+{
+    width:172px;
+    height:142px;
+}
+</style>
+</head>
+<body>  
+ <br>
+    
+
+<nav class="horizontalNAV">
+<ul>
+<li><a class = "#active" href="#about">About our Store</a></li>
+<li><a href="#appliances">Appliances</a></li>
+<li><a href="#dairy">Dairy</a></li>
+<li><a href="#meat">Meats</a></li>
+      <li><a href="#fruit">Fruit</a></li>
+      <li><a href="#veggies">Vegetables</a></li>
+</ul>
+    </nav>
+<div id="mainContainer" style ="margin:20px; padding:10px;">
+<div id="header">
+      <img src="https://www.acf.hhs.gov/sites/default/files/styles/acf_asset_large/public/assets/year_up_career_pathways_program_image.GIF?itok=gOpRdct-"
+style="width:172px;height:82px;">
+<h2 id = "about"> 
+    <p class="serif">Welcome to A&J Grocery Store! Where All your needs are Met!</p>
+About Us</h2><p>Alvin and Joseph have put together all of their funds and opened a grocery store where the public can buy house hold products and more!</p>
+<p> Here you can select all grocery items that you will need today, tomorrow, next week, or next month. Whatever you need, we have it.</P>
+
+     
+</div>
+
+<div style="margin-left:10%;padding:1px 16px;">
+    
+<h1 id = "appliances">Appliances</h1>
+<img src= "http://www.pcrichard.com/images/promos/Small-Appliances.jpg"style="width:172px;height:142px;"> 
+  <button id = 'apBtn' onClick = "applianceAppear()"> Click here to shop in appliances</button> 
+  <img class = 'applItem' onClick = "addToCart('blender')" src = images/blender.jpg> 
+  <img class = 'applItem' onClick = "addToCart('mixer')" src = images/mixer.jpg> 
+  <img class = 'applItem' onClick = "addToCart('toaster')" src = images/toaster.jpg>
+
+<h1 id = "dairy">Dairy</h1>
+      <img src="http://oregonstate.edu/foodsci/dairy/dairy_products.jpg"
+style="width:172px;height:142px;">          
+   <button id ='drBtn' onClick = "dairyAppear()"> Click here to shop in Dairy</button>
+   <img class = 'dairyItem' onClick = "addToCart('milk')" src = images/milk.jpg>
+  
+   <img class = 'dairyItem' onClick = "addToCart('cheese')" src = images/cheese.jpg>
+   <img class = 'dairyItem' onClick = "addToCart('butter')" src = images/butter.jpg>
+         
+<h1 id = "meat">Meats</h1>
+      <img src="http://www.funx.nl/images/1/12.c0d84be718b2dfebf0aff1408ca8ed4547192d70-1445863848-562e21a8-620x348.jpg"
+style="width:172px;height:142px;">             
+    <button id = 'mtBtn' onClick = "meatAppear()"> Click here to shop in Meats</button>
+    <img class = 'meatItem' onClick = "addToCart('chicken')" src = images/chicken.jpg> 
+    <img class = 'meatItem' onClick = "addToCart('ham')" src = images/ham.jpg>
+    <img class = 'meatItem' onClick = "addToCart('beef')" src = images/beef.jpg>
+        
+<h1 id = "fruit">Fruit</h1>
+      <img id = 'ftBtn' src= "http://www.thaihealth.or.th/data/content/28934/cms/thaihealth_c_befqrtv13459.jpg"
+style="width:172px;height:142px;">
+       <button on onClick = "fruitAppear()"> Click here to shop in Fruits</button><img class = 'fruitItem' onClick = "addToCart('apple')" src = images/apple.jpg> <img class = 'fruitItem' onClick = "addToCart('banana')" src = images/banana.jpg>
+        <img class = 'fruitItem' onClick = "addToCart('tomato')" src = images/tomato.jpg>
+          
+<h1 id = "veggies">Vegetables</h1>
+      <img src = "http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/12_powerhouse_vegetables_slideshow/intro_cream_of_crop.jpg"
+style="width:172px;height:142px;">
+       <button id = 'vgBtn' onClick = "veggieAppear()"> Click here to shop in Vegetables</button>
+       <img class = 'veggieItem' onClick = "addToCart('eggplant')" src = images/eggplant.jpg>
+       <img class = 'veggieItem' onClick = "addToCart('ginger')" src = images/ginger.jpg> 
+       <img class = 'veggieItem' onClick = "addToCart('spinnach')" src = images/spinnach.jpg>
+        
+      
+        </div>
+<button onClick = 'completePurchase()'> YOU FINISHED?	</button> 
+<button onClick = 'removeItem()'> Remove something?	</button>
+        </div>
+        <div id="footer" style ="position:relative;
+        left:50%;">
+          <p style ="margin-right:50px;">Phone:1(800)-576-0547</p> 
+          <p>Email: A&J@atl.yearup.org </p> 
+
+     <br>
+     <a href = "Homepage_Groceries.html"><button>Click to clear all items</button></a>
+
+</div>
+<script>
+window.shoppingCart = []
+
+
+var inventory = [] 
+var total = []
+
+inventory[0] = new Object
+inventory[0].name ='blender'
+inventory[0].price = 34.99
+inventory[0].qty = null
+inventory[1] = new Object
+inventory[1].name ='mixer'
+inventory[1].price = 74.99
+inventory[1].qty = null
+inventory[2] = new Object
+inventory[2].name ='toaster'
+inventory[2].price = 19.99
+inventory[2].qty = null
+inventory[3] = new Object
+inventory[3].name ='apple'
+inventory[3].price = .77
+inventory[3].qty = null
+inventory[4] = new Object
+inventory[4].name ='banana'
+inventory[4].price = 1.29
+inventory[4].qty = null
+inventory[5] = new Object
+inventory[5].name ='tomato'
+inventory[5].price = .99
+inventory[5].qty =  null
+inventory[6] = new Object
+inventory[6].name ='chicken'
+inventory[6].price = 7.99
+inventory[6].qty= null
+inventory[7] = new Object
+inventory[7].name ='beef'
+inventory[7].price = 11.99
+inventory[7].qty = null
+inventory[8] = new Object
+inventory[8].name ='ham'
+inventory[8].price = 14.99
+inventory[8].qty = null
+inventory[9] = new Object
+inventory[9].name ='milk'
+inventory[9].price = 2.45
+inventory[9].qty = null
+inventory[10] = new Object
+inventory[10].name ='cheese'
+inventory[10].price = 4.99
+inventory[10].qty = null
+inventory[11] = new Object
+inventory[11].name ='butter'
+inventory[11].price = 2.59
+inventory[11].qty = null
+inventory[12] = new Object
+inventory[12].name ='spinnach'
+inventory[12].price = 1.09
+inventory[12].qty = null
+inventory[13] = new Object
+inventory[13].name ='eggplant'
+inventory[13].price = 3.69
+inventory[13].qty = null
+inventory[14] = new Object
+inventory[14].name ='ginger'
+inventory[14].price = 6.99
+inventory[14].qty = null
+
+
+
+// var toaster = new inventory('toaster', 20.99)
+// var mixer = new inventory('mixer', 14.99)
+// var apple = new inventory('apple', .77)
+// var banana = new inventory('banana', 1.50)
+// var chicken = new inventory('chicken', 7.99)
+// var eggplant = new inventory('eggplant', 4.99)
+// var ginger = new inventory('ginger', 2.99)
+// var ham = new inventory('ham', 15.99)
+// var eggs = new inventory('eggs', .25)
+// var spinnach = new inventory('spinnach', 3.99)
+// var garlic = new inventory('garlic', 2.99)
+// var cheese = new inventory('cheese', 4.99)
+// var milk = new inventory('milk', 2.45)
+// var butter = new inventory('butter', 4.99)
+// var beef = new inventory('beef', 11.99)
+// var tomatos = new inventory('tomato', .79)
+//above are my objects that I will call later
+
+  var applElements = document.getElementsByClassName("applItem");
+
+  for (var i = 0; i < applElements.length; i++)
+  {
+     applElements[i].style.display ='none';
+  }
+ var dairyElements = document.getElementsByClassName("dairyItem");
+
+  for (var i = 0; i < dairyElements.length; i++)
+  {
+     dairyElements[i].style.display ='none';
+  }
+  var meatElements = document.getElementsByClassName("meatItem");
+
+  for (var i = 0; i < meatElements.length; i++)
+  {
+     meatElements[i].style.display ='none';
+  }
+  var fruitElements = document.getElementsByClassName("fruitItem");
+
+  for (var i = 0; i < fruitElements.length; i++)
+  {
+     fruitElements[i].style.display ='none';
+
+  }
+  var veggieElements = document.getElementsByClassName("veggieItem");
+
+  for (var i = 0; i < veggieElements.length; i++)
+  {
+     veggieElements[i].style.display ='none';
+  }
+  
+
+ var applianceAppear = function()
+  {
+  	for(var i = 0; i < applElements.length; i++)
+  		{
+  			if(applElements[i].style.display =='none')
+  	{
+  		 applElements[i].style.display ='inline';
+  		 	document.getElementById('apBtn').innerHTML ='Click to hide'
+  		}
+  		else if(applElements[i].style.display =='inline')
+  		{
+  			applElements[i].style.display ='none'
+  			document.getElementById('apBtn').innerHTML ='Click here shop in appliances'
+  		}
+  	}
+  }
+  var dairyAppear = function()
+  {
+  	for(var i = 0; i < dairyElements.length; i++)
+  		{
+  			if(dairyElements[i].style.display =='none')
+  	{
+  		 dairyElements[i].style.display ='inline';
+  		 	document.getElementById('drBtn').innerHTML ='Click to hide'
+  		}
+  		else if(dairyElements[i].style.display =='inline')
+  		{
+  			dairyElements[i].style.display ='none'
+  			document.getElementById('drBtn').innerHTML ='Click here shop in Dairy'
+  		}
+  	}
+  }
+  var meatAppear = function()
+  {
+  	for(var i = 0; i < meatElements.length; i++)
+  		{
+  			if(meatElements[i].style.display =='none')
+  	{
+  		 meatElements[i].style.display ='inline';
+  		 	document.getElementById('mtBtn').innerHTML ='Click to hide'
+  		}
+  		else if(meatElements[i].style.display =='inline')
+  		{
+  			meatElements[i].style.display ='none'
+  			document.getElementById('mtBtn').innerHTML ='Click here shop in Meat'
+  		}
+  	}
+  }
+  var fruitAppear = function()
+  {
+  	for(var i = 0; i < fruitElements.length; i++)
+      {
+        if(fruitElements[i].style.display =='none')
+    {
+       fruitElements[i].style.display ='inline';
+        document.getElementById('ftBtn').innerHTML ='Click to hide'
+      }
+      else if(fruitElements[i].style.display =='inline')
+      {
+        fruitElements[i].style.display ='none'
+        document.getElementById('ftBtn').innerHTML ='Click here shop in fruits'
+      }
+    }
+  }
+  var veggieAppear = function()
+  {
+  	for(var i = 0; i < veggieElements.length; i++)
+  		{
+  			if(veggieElements[i].style.display =='none')
+  	{
+  		 veggieElements[i].style.display ='inline';
+  		 	document.getElementById('vgBtn').innerHTML ='Click to hide'
+  		}
+  		else if(veggieElements[i].style.display =='inline')
+  		{
+  			veggieElements[i].style.display ='none'
+  			document.getElementById('vgBtn').innerHTML ='Click here shop in veggies'
+  		}
+  	}
+  }
+//   var addToCart = function(item)
+
+//   {
+//   	var cart = []
+//   var qty = prompt("How many/much " + item.name + " do you want?")
+//   	 cartObject = new Object()
+//   	{
+//   		item.name = item,
+//   		item.qty = qty,
+//   		item.price = function()
+//   		{if(inventory.name == item.name)
+//   			alert(item.price)
+//   		{
+//   			inventory.price == item.price
+//   		}
+
+//   	}
+//   }
+// }
+
+var addToCart = function(item)
+{
+var purchase = prompt("do you want to buy "+item)
+	
+	if(purchase.toUpperCase() == 'YES')
+
+	{
+	 for(var i = 0; i < inventory.length; i++) 
+		if (inventory[i].name == item){
+			
+			shoppingCart.push(inventory[i])
+			for( var l = 0; l < shoppingCart.length; l++)
+			{
+				if (shoppingCart[l].name == item && shoppingCart[l].qty == null)
+				{
+			shoppingCart[l].qty = parseInt(prompt("How many do you want to buy?"))
+	console.log(shoppingCart[l])	
+	break;
+	
+}
+}
+}
+
+}
+  }
+
+var removeItem = function()
+{
+  var wantTo = prompt("Do you want to remove an item?")
+   if(wantTo.toUpperCase() == 'YES')
+   {
+	var remove = prompt("What item do you want to remove")
+	for(var r = 0 ; r < shoppingCart.length; r++)
+  {
+  	  if (remove === shoppingCart[r].name)
+  {
+  	alert( "You remove all the " + shoppingCart[r].name+ " in your cart.")
+    shoppingCart.splice(r,1)
+
+    break;
+  }
+    	
+}
+  
+  
+	}
+}
+
+
+var completePurchase = function()
+{
+	var ready = prompt('Are you ready to check out?')
+	
+		if (ready.toUpperCase() == 'YES'){
+			
+			for (var m = 0; m < shoppingCart.length; m++)
+			{
+				var itemTotal = parseFloat(shoppingCart[m].qty) * parseFloat(shoppingCart[m].price)
+					total.push(itemTotal)
+					var tax = total *.075
+					var grandTotal = parseFloat(total + tax)
+					if(grandTotal < 100){
+								alert("Your total is $"+ grandTotal.toFixed(2)+ ". Have a nice day")
+							}
+							else {alert("Your total is $" + grandTotal.toFixed(2)+ ". You have to use a credit card to complete your purchase")}
+				}
+			}
+			else if (ready.toUpperCase() =='NO')
+			{
+				var unsureAboutItem = prompt('do you want to remove an item?')
+				{
+					if (unsureAboutItem.toUpperCase() == 'YES')
+					{
+						removeItem()
+					}
+					else{alert("ok continue shopping")}
+				}
+			}
+		}
+</script>
+</body> 
+
+
+</html>
